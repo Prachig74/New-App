@@ -1,0 +1,10 @@
+services:
+  - name: property_app
+    type: web
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        value: jdbc:mysql://localhost:3306/property_app
+      - key: JWT_SECRET
+        value: mySuperSecretKey123
